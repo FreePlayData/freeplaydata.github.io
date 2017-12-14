@@ -67,6 +67,9 @@
 
 <body id="page-top">
 
+  <!-- Facebook Event Pixel for Page Load -->
+  <script>fbq('track', 'ViewContent');</script>
+
   <div id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -481,8 +484,8 @@
 		</div>
 
 		<!-- Start of Optional Fields -->
-<div class="row">
-<div class="col-lg-12">
+		<div class="row">
+		<div class="col-lg-12">
 		<div class="panel optional-fields">
 		  <div class="panel-heading"
 		       data-toggle="collapse" data-target="#collapseOptional">
@@ -570,16 +573,25 @@
 		      </div>
 		    </div>
 		  </div>
+		</div>
+		</div>
 		</div>  <!-- End of Optional Fields -->
-</div></div>
 		<div class="form-actions">
-		  <button type="submit" class="btn btn-primary">Submit</button>
+		  <button id="submitButton" type="submit" class="btn btn-primary">Submit</button>
 		  <div class="btn-divider"></div>
 		  <button type="reset" class="btn btn-default">Clear</button>
 		</div>
 	      </fieldset>
 	    </form>
 	  </div>
+	  <!-- Facebook Event Pixel for Lead Generation. -->
+	  <script type="text/javascript">
+	    $( '#$submitButton' ).click(function() {
+              fbq('track', 'Lead', {
+                value: email,
+              });
+	    }
+	  </script>
 	  <!-- Somewhat obfuscate email, as it resides in action attribute. -->
 	  <script>
 	    var form =  document.getElementById('contact-form');
