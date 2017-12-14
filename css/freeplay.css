@@ -394,19 +394,19 @@ header .header-content .header-content-inner h1 {
     margin-top: 0;
     margin-bottom: 0;
     text-transform: uppercase;
-    font-family: 'Lato';
+    font-family: 'Libre Franklin';
     font-weight: 900;
     color: #127156;
-    letter-spacing:+0.04em;
+    letter-spacing:+0.02em;
     line-height:1;
-    word-spacing:+0.4em;
+    //word-spacing:+0.4em;
 }
 
 header .header-content .header-content-inner h2 {
     margin-top: 0;
     margin-bottom: 0;
-    font-family: 'Lato';
-    font-weight: 300;
+    font-family: 'Libre Franklin';
+    font-weight: 700;
     color: #199f78;
     //color: #d4bcc3;
     letter-spacing:+0.01em;
@@ -428,7 +428,7 @@ header .header-content .header-content-inner h3 {
 header .header-content .header-content-inner h4 {
     margin-top: 0;
     margin-bottom: 0;
-    font-family: 'Lato';
+    font-family: 'Libre Franklin';
     font-weight: 300;
     //color: #147e60;
     color: #042818;
@@ -813,7 +813,7 @@ footer p {
     padding: 10px;
 }
 
-#modal1 .modal-header, #modal1 .modal-footer { background-color: #ffe0d2; }
+#modal1 .modal-header, #modal1 .modal-footer { background-color: #dbffe6; }
 #modal2 .modal-header, #modal2 .modal-footer { background-color: #ffe0d2; }
-#modal3 .modal-header, #modal3 .modal-footer { background-color: #ffe0d2; }
-#modal4 .modal-header, #modal4 .modal-footer { background-color: #ffe0d2; }
+#modal3 .modal-header, #modal3 .modal-footer { background-color: #dff5ff; }
+#modal4 .modal-header, #modal4 .modal-footer { background-color: #e9dfff; }
