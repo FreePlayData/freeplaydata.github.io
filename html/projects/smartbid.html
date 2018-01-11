@@ -1,0 +1,90 @@
+<div class="project-step">
+  <emph>Setting</emph>
+  On an internet ad exchange, advertisers and their agencies
+  <a href="https://en.wikipedia.org/wiki/Real-time_bidding"
+     target="_blank">
+    bid in real time
+  </a>
+  to display an ad, whenever an internet user loads content containing
+  a site placement (e.g. a panel within a web site or app for showing
+  ads.)&nbsp;&nbsp;Achieving a targeted quantity of impressions while
+  minimizing cost, especially given preferences over user and
+  placement combinations, is a moving target; bids must be high enough
+  to win auctions, but low enough to conserve
+  spending.&nbsp;&nbsp;Further, the optimal bidding strategy changes
+  constantly according to the actions and reactions of thousands of
+  other automated bidding agents.
+</div>
+
+<br>
+
+<div class="project-step">
+  <emph>Requirements</emph> Bidding agent must minimize cost per
+  impression (eCPM) while meeting advertiser's purchase order for ad
+  to appear a mandatory number of times, distributed evenly over a
+  specified number of days, on a constrained set of desirable
+  placements.&nbsp;&nbsp;(Potentially negative) difference between
+  purchase order price and cumulative bidding costs represent agent's
+  earnings.
+</div>
+
+<br>
+
+<img src="graphics/portfolio/smartbid.png"
+     class="img-responsive" alt="image of bidding graph">
+
+<br>
+
+<div class="project-step">
+  <emph>Work Performed</emph>
+  Convened working group of advertisers, bidding manaagers, data
+  engineers, and product managers; then, designed technical roadmap
+  for replacing manually-calibrated, human-supervised, fixed-strategy
+  bidding agents with data-driven, self-managing, adaptive, autonomous
+  agents built on artificial intelligence technologies.&nbsp;&nbsp;
+  Built and tested production system; worked with operations engineers
+  and account executives to deploy on live exchange.
+</div>
+
+<br>
+
+<div class="project-step">
+  <emph>Outcome</emph> Bidding agents discovered and exploited hidden
+  features of worldwide ad exchanges, most prominently a fixed-rate
+  pacing behavior where majority of bidders ensure smooth delivery of
+  ads across time by dividing targeted number of impressions into
+  equally-sized allotments for delivery in 5-minute, 15-minute, or
+  60-minute windows.&nbsp;&nbsp;(For instance, to evenly deliver
+  400,000 impressions over a 100-hour period, agents are ordered to
+  win 4,000 auctions per hour, or perhaps 1,000 every fifteen
+  minutes.)
+  <br><br>
+  <strong>Depicted above</strong>: Horizontal axis represents passage
+  of time over a 90 minute interval; variously colored points
+  represent winning bids for different bidding strategies; vertical
+  axis represents price of winning bid.&nbsp;&nbsp;Key observation is
+  that due to implementation of pacing behavior across the world,
+  almost 90% of bids on the exchange occur within the first minutes of
+  every quarter-hour time block, as agents rush to meet their
+  scheduled allotment.&nbsp;&nbsp;Thus, they are in unnecessary
+  contention and pay much higher prices per impression than if they
+  waited.&nbsp;&nbsp;In fact, at the tail end of each fifteen-minute
+  period there are already no more bidders; adaptive bidding agents
+  exploited this dynamic to win repeated auctions at the mimimum bid
+  price.&nbsp;&nbsp;(For instance, thousands of agents are all bidding
+  to meet their block goals at 9:00, 9:15, 9:30, and 9:45 AM, but by
+  9:04, 9:19, 9:34 and 9:49 nobody on the internet is seeing ads
+  because bidders have exhausted their allotments and are idling until
+  the next period.)
+  <br><br> Average cost improvement of 42% on exchange representing
+  roughly $100M revenue.&nbsp;&nbsp;(Larger image depicting full
+  24-hour period available for download below.)
+</div>
+
+<br>
+
+<a href="graphics/portfolio/smartbid-full.png"
+   download>
+  <img src="graphics/portfolio/smartbid-full.png"
+       class="img-responsive" alt="full image of bidding graph">
+</a>

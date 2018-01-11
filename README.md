@@ -1,7 +1,8 @@
-# bluesoxx.github.io
-Landing page for bluesoxx.com.
+# Landing page for bluesoxx.com.
+
+For dev, need to use local http server due to
+'crossdomain' loads for project descriptions:
+
+python -m SimpleHTTPServer 8080
 
 
-TODO:
-+ Confirm that Facebook pixel events are working.
-+ Confirm that Google Analytics are working.

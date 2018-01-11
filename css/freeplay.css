@@ -1,3 +1,4 @@
+
 /*!
  * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
@@ -783,8 +784,12 @@ footer p {
     margin: 5px;
 }
 
-
 /* Modals for displaying project information. */
+
+.modal-md {
+  width: 900px;
+  margin: 50px auto;
+}
 
 .project .modal-title h4 {
     padding-left: 2px;
@@ -806,14 +811,49 @@ footer p {
 }
 
 .project .modal-body {
-    background-color: #e5debd;
+    background-color: #f3f0e2;
 }
 
 .project .modal-header, .project .modal-footer {
     padding: 10px;
 }
 
+.modal-body {
+    max-height: calc(100vh - 280px);
+    overflow-y: auto;
+}
+
+.modal-body img {
+    border-style: solid;
+    //border-color: #1ba77f;
+    border-color: #555;
+    border-width: 0px;
+    display: block;
+    margin: auto;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.modal-body strong {
+    font-weight: bold;
+    font-style: italic;
+}
+
 #modal1 .modal-header, #modal1 .modal-footer { background-color: #dbffe6; }
 #modal2 .modal-header, #modal2 .modal-footer { background-color: #ffe0d2; }
 #modal3 .modal-header, #modal3 .modal-footer { background-color: #dff5ff; }
 #modal4 .modal-header, #modal4 .modal-footer { background-color: #e9dfff; }
+
+/* Styling for the different sections of a project description. */
+
+.project-step emph {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.project-step emph::after {
+    /*
+    content: " \2014 ";
+    */
+    content: "\00a0\2014";
+}

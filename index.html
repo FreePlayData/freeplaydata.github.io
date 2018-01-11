@@ -20,6 +20,7 @@
     gtag('config', 'UA-111293270-1');
   </script>
 
+
   <!-- Open Graph Properties -->
   <meta property="og:title" content="Freeplay Data" />
   <meta property="og:type" content="website" />
@@ -213,7 +214,7 @@
             <i class="fa fa-4x fa-trophy wow bounceIn text-primary" data-wow-delay=".3s"></i>
             <h3>Real Accomplishments</h3>
             <p class="text-muted">
-	      Freeplay data is not a startup and does not chase
+	      Freeplay Data is not a startup and does not chase
 	      venture investment by targeting high-visibility
 	      technologies or engaging demos at the expense of clarity
 	      of purpose or substance in work.&nbsp;&nbsp;Success is
@@ -333,18 +334,18 @@
 
   <!-- Modal 1 -->
   <div id="modal1" class="modal fade" role="dialog" tabindex="-1">
-    <div class="project modal-dialog">
+    <div class="project modal-dialog modal-md">
       <div class="modal-content">
 	<div class="modal-header">
           <button type="button" class="close btn-x" data-dismiss="modal">&times;</button>
           <div class="modal-title">
-	    <h4>Convolutional Neural Networks</h4>
+	    <h4>
+	      Convolutional Neural Networks and Supervised Learning
+	    </h4>
 	    <h2>Facial Recognition and Predictive Classification</h2>
 	  </div>
 	</div>
-	<div class="modal-body">
-          <p>Link to project description.</p>
-	</div>
+	<div class="modal-body" project-source="faces.html"></div>
 	<div class="modal-footer">
           <button type="button" autofocus class="btn btn-success"
 		  data-dismiss="modal">Done</button>
@@ -355,18 +356,16 @@
 
   <!-- Modal 2 -->
   <div id="modal2" class="modal fade" role="dialog" tabindex="-1">
-    <div class="project modal-dialog">
+    <div class="project modal-dialog modal-md">
       <div class="modal-content">
 	<div class="modal-header">
           <button type="button" class="close btn-x" data-dismiss="modal">&times;</button>
           <div class="modal-title">
-            <h4>Reinforcement Learning</h4>
+            <h4>Reinforcement Learning and Auction Strategy</h4>
 	    <h2>Ad Exchange Optimization</h2>
 	  </div>
 	</div>
-	<div class="modal-body">
-          <p>Link to project description.</p>
-	</div>
+	<div class="modal-body" project-source="smartbid.html"></div>
 	<div class="modal-footer">
           <button type="button" autofocus class="btn btn-success"
 		  data-dismiss="modal">Done</button>
@@ -377,18 +376,16 @@
 
   <!-- Modal 3 -->
   <div id="modal3" class="modal fade" role="dialog" tabindex="-1">
-    <div class="project modal-dialog">
+    <div class="project modal-dialog modal-md">
       <div class="modal-content">
 	<div class="modal-header">
           <button type="button" class="close btn-x" data-dismiss="modal">&times;</button>
           <div class="modal-title">
-	    <h4>Anomaly Detection</h4>
-	    <h2>Fraud Detection</h2>
+	    <h4>Anomaly Detection and Unsupervised Learning</h4>
+	    <h2>Automated Fraud Prevention</h2>
 	  </div>
 	</div>
-	<div class="modal-body">
-          <p>Link to project description.</p>
-	</div>
+	<div class="modal-body" project-source="fraud.html"></div>
 	<div class="modal-footer">
           <button type="button" autofocus class="btn btn-success"
 		  data-dismiss="modal">Done</button>
@@ -399,18 +396,18 @@
 
   <!-- Modal 4 -->
   <div id="modal4" class="modal fade" role="dialog" tabindex="-1">
-    <div class="project modal-dialog">
+    <div class="project modal-dialog modal-md">
       <div class="modal-content">
 	<div class="modal-header">
           <button type="button" class="close btn-x" data-dismiss="modal">&times;</button>
           <div class="modal-title">
-	    <h4>Auction Strategy, Scheduling, UAVs, and More...</h4>
-	    <h2>Other Expertise</h2>
+	    <h4>Mechanism Design, Scheduling, UAV Coordination,
+	      etc...
+	    </h4>
+	    <h2>Other Projects</h2>
 	  </div>
 	</div>
-	<div class="modal-body">
-          <p>Link to project description.</p>
-	</div>
+	<div class="modal-body" project-source="other.html"></div>
 	<div class="modal-footer">
           <button type="button" autofocus class="btn btn-success"
 		  data-dismiss="modal">Done</button>
@@ -577,21 +574,13 @@
 		</div>
 		</div>  <!-- End of Optional Fields -->
 		<div class="form-actions">
-		  <button id="submitButton" type="submit" class="btn btn-primary">Submit</button>
+		  <button type="submit" class="btn btn-primary">Submit</button>
 		  <div class="btn-divider"></div>
 		  <button type="reset" class="btn btn-default">Clear</button>
 		</div>
 	      </fieldset>
 	    </form>
 	  </div>
-	  <!-- Facebook Event Pixel for Lead Generation. -->
-	  <script type="text/javascript">
-	    $( '#$submitButton' ).click(function() {
-              fbq('track', 'Lead', {
-                value: email,
-              });
-	    }
-	  </script>
 	  <!-- Somewhat obfuscate email, as it resides in action attribute. -->
 	  <script>
 	    var form =  document.getElementById('contact-form');
@@ -669,28 +658,6 @@
 
   <!-- Custom Theme JavaScript -->
   <script src="javascript/freeplay.js"></script>
-
-
-  <!-- TODO: Google Analytics -->
-  <script>
-
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111293270-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-111293270-1');
-</script>
-
-
-  </script>
-
-  <!-- TODO
-	 + <meta name="description" ...> and <meta name="google-site-verification" ...>
-    -->
 
 </body>
 </html>

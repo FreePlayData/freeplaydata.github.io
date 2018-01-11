@@ -7,13 +7,23 @@
 (function($) {
     "use strict"; // Start of use strict
 
+    // Go through all the elements with a "project-source" attribute
+    // and source the specified html file.  Used for loading project
+    // descriptions into modals from separate html files.
+    // EIH 16 DEC 2017
+    $(function(){
+      var sources = $('[project-source]');
+      jQuery.each(sources, function(){
+        var file = 'html/projects/' + $(this).attr('project-source');
+        $(this).load(file);
+      });
+    });
 
     // Every time a modal is shown, if it has an autofocus element, focus on it.
     // EIH 26 NOV 2017
     $('.modal').on('shown.bs.modal', function() {
 	$(this).find('[autofocus]').focus();
     });
-
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
